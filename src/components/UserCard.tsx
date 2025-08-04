@@ -15,7 +15,7 @@ const UserCard: React.FC<UserCardProps> = ({ user, onClick }) => (
     <img
       src={user.picture.large}
       alt={user.fullName}
-      className="w-full h-48 object-cover"
+      className="w-full h-auto object-cover"
     />
     <div className="p-4">
       <h3 className="text-lg font-semibold text-gray-800">{user.fullName}</h3>
