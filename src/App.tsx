@@ -13,7 +13,7 @@ const App: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const API_URL ='https://randomuser.me/api/?results=10&inc=name,picture,email,location,phone,login';
+  const API_URL = process.env.REACT_APP_RANDOM_USER_API!;
 
   // Fetch fsers
   const fetchUsers = useCallback(async (append = false) => {
